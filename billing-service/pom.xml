@@ -73,8 +73,6 @@
 			<artifactId>protobuf-java</artifactId>
 			<version>4.29.1</version>
 		</dependency>
-
-
 	</dependencies>
 
 	<build>
@@ -102,6 +100,11 @@
 					<protocArtifact>com.google.protobuf:protoc:3.25.5:exe:${os.detected.classifier}</protocArtifact>
 					<pluginId>grpc-java</pluginId>
 					<pluginArtifact>io.grpc:protoc-gen-grpc-java:1.68.1:exe:${os.detected.classifier}</pluginArtifact>
+					<protoSourceRoot>${project.basedir}/../protos</protoSourceRoot>
+					<!-- Only compile billing-related protos for billing-service -->
+					<includes>
+						<include>billing-service/**/*.proto</include>
+					</includes>
 				</configuration>
 				<executions>
 					<execution>

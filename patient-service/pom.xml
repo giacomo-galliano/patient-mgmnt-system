@@ -106,6 +106,10 @@
             <artifactId>protobuf-java</artifactId>
             <version>4.29.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -137,6 +141,7 @@
                     <!-- Only compile billing-related protos for billing-service -->
                     <includes>
                         <include>billing-service/**/*.proto</include>
+                        <include>patient-service/**/*.proto</include>
                     </includes>
                 </configuration>
                 <executions>

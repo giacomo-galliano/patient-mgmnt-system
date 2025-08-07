@@ -1,6 +1,7 @@
 # IDE
 .idea/
 *.iml
+.run/*.xml
 
 # Build
 */target/

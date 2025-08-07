@@ -1,0 +1,6 @@
+### GET request to validate token
+### the variable will exist if we run the login request first
+GET https://localhost:4004/auth/validate
+Authorization: Bearer {{token}}
+
+###

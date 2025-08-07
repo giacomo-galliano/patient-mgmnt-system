@@ -23,7 +23,7 @@
         <option name="portBindings">
           <list>
             <DockerPortBindingImpl>
-              <option name="containerPort" value="5342" />
+              <option name="containerPort" value="5432" />
               <option name="hostPort" value="5001" />
             </DockerPortBindingImpl>
           </list>
@@ -33,7 +33,7 @@
           <list>
             <DockerVolumeBindingImpl>
               <option name="containerPath" value="/var/lib/postgresql/data" />
-<!--              <option name="hostPath" value="\custom-path\pt-mgmnt-system-db\auth-service-db" />-->
+              <option name="hostPath" value="\custom-path\pt-mgmnt-system-db\auth-service-db" />
             </DockerVolumeBindingImpl>
           </list>
         </option>

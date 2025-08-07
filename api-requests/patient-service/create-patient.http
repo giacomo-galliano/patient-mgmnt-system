@@ -1,5 +1,6 @@
 ### Create new patient entity
-POST http://localhost:4000/patients/add
+POST http://localhost:4004/api/patients/add
+Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
